@@ -25,7 +25,7 @@ Demonstrar o funcionamento de recursos essenciais do .NET para desenvolvedores i
 ├── 📂 Colecoes_LINQ
 ├── 📂 Async_Tasks
 ├── 📂 Exceptions
-└── 📂 EntityFramework_Intro
+└── 📂 EntityFramework
 ```
 
 ## 🚀 Como executar
@@ -33,7 +33,7 @@ Demonstrar o funcionamento de recursos essenciais do .NET para desenvolvedores i
 1. Tenha o [.NET SDK](https://dotnet.microsoft.com/download) instalado.
 2. Navegue até a pasta do exemplo:
    ```sh
-   cd fundamentos-dotnet/Tipos_E_Estruturas
+   cd Fundamentos_dotnet
    ```
 3. Execute:
    ```sh

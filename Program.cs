@@ -1,2 +1,65 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using TiposEstruturasDotNet.Topicos;
+
+namespace TiposEstruturasDotNet
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int opcao = -1;
+
+            while (opcao != 0)
+            {
+                Console.Clear();
+                Console.WriteLine("=== Aprendendo Fundamentos .NET ===");
+                Console.WriteLine("1 - Tipos e Estruturas");
+                Console.WriteLine("2 - Coleções e LINQ");
+                Console.WriteLine("3 - Async/Await e Tasks");
+                Console.WriteLine("4 - Exceptions");
+                Console.WriteLine("5 - Entity Framework");
+                Console.WriteLine("0 - Sair");
+                Console.Write("Selecione uma opção: ");
+
+                if (!int.TryParse(Console.ReadLine(), out opcao))
+                {
+                    Console.WriteLine("Opção inválida. Pressione uma tecla para continuar...");
+                    Console.ReadKey();
+                    continue;
+                }
+
+                Console.Clear();
+
+                switch (opcao)
+                {
+                    case 1:
+                        TiposEestruturas.Executar();
+                        break;
+                    case 2:
+                        Console.WriteLine("Coleções e LINQ - Em desenvolvimento...");
+                        break;
+                    case 3:
+                        Console.WriteLine("Async/Await e Tasks - Em desenvolvimento...");
+                        break;
+                    case 4:
+                        Console.WriteLine("Exceptions - Em desenvolvimento...");
+                        break;
+                    case 5:
+                        Console.WriteLine("Entity Framework - Em desenvolvimento...");
+                        break;
+                    case 0:
+                        Console.WriteLine("Encerrando aplicação...");
+                        break;
+                    default:
+                        Console.WriteLine("Opção inválida.");
+                        break;
+                }
+
+                if (opcao != 0)
+                {
+                    Console.WriteLine("\nPressione qualquer tecla para voltar ao menu...");
+                    Console.ReadKey();
+                }
+            }
+        }
+    }
+}
