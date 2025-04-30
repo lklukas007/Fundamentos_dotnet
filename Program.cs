@@ -1,4 +1,5 @@
 ﻿using TiposEstruturasDotNet.Topicos;
+using Colecoes_LINQ;
 
 namespace TiposEstruturasDotNet
 {
@@ -35,7 +36,7 @@ namespace TiposEstruturasDotNet
                         TiposEestruturas.Executar();
                         break;
                     case 2:
-                        Console.WriteLine("Coleções e LINQ - Em desenvolvimento...");
+                        Colecoes_e_LINQ.Executar();
                         break;
                     case 3:
                         Console.WriteLine("Async/Await e Tasks - Em desenvolvimento...");
