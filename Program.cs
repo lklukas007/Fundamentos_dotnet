@@ -42,7 +42,7 @@ namespace TiposEstruturasDotNet
                         await Async_Tasks.AsyncTasks.ExecutarAsync();
                         break;
                     case 4:
-                        Console.WriteLine("Exceptions - Em desenvolvimento...");
+                        Exceptions.TratamentoDeExcecoes.Executar();
                         break;
                     case 5:
                         Console.WriteLine("Entity Framework - Em desenvolvimento...");
