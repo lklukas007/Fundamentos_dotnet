@@ -5,7 +5,7 @@ namespace TiposEstruturasDotNet
 {
     class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
             int opcao = -1;
 
@@ -39,7 +39,7 @@ namespace TiposEstruturasDotNet
                         Colecoes_e_LINQ.Executar();
                         break;
                     case 3:
-                        Console.WriteLine("Async/Await e Tasks - Em desenvolvimento...");
+                        await Async_Tasks.AsyncTasks.ExecutarAsync();
                         break;
                     case 4:
                         Console.WriteLine("Exceptions - Em desenvolvimento...");
