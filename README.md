@@ -15,7 +15,7 @@ Demonstrar o funcionamento de recursos essenciais do .NET para desenvolvedores i
 - LINQ
 - Async/Await e Tasks
 - Exceptions
-- Entity Framework Core (introdução)
+- Dapper
 
 ## 📁 Estrutura
 
@@ -25,7 +25,7 @@ Demonstrar o funcionamento de recursos essenciais do .NET para desenvolvedores i
 ├── 📂 Colecoes_LINQ
 ├── 📂 Async_Tasks
 ├── 📂 Exceptions
-└── 📂 EntityFramework
+└── 📂 Dapper
 ```
 
 ## 🚀 Como executar

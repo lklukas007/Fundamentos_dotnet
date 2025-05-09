@@ -1,5 +1,6 @@
 ﻿using TiposEstruturasDotNet.Topicos;
 using Colecoes_LINQ;
+using AcessoDadosDapper;
 
 namespace TiposEstruturasDotNet
 {
@@ -17,7 +18,7 @@ namespace TiposEstruturasDotNet
                 Console.WriteLine("2 - Coleções e LINQ");
                 Console.WriteLine("3 - Async/Await e Tasks");
                 Console.WriteLine("4 - Exceptions");
-                Console.WriteLine("5 - Entity Framework");
+                Console.WriteLine("5 - Dapper");
                 Console.WriteLine("0 - Sair");
                 Console.Write("Selecione uma opção: ");
 
@@ -45,7 +46,7 @@ namespace TiposEstruturasDotNet
                         Exceptions.TratamentoDeExcecoes.Executar();
                         break;
                     case 5:
-                        Console.WriteLine("Entity Framework - Em desenvolvimento...");
+                        DapperExemplo.Executar();
                         break;
                     case 0:
                         Console.WriteLine("Encerrando aplicação...");
